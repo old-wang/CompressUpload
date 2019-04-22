@@ -1,4 +1,32 @@
-.add_box{
-  border: 1px solid #ddd;
+.add_box {
+  border: 1px dashed #ddd;
   border-radius: 5px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add_box i {
+  font-size: 24px;
+  line-height: 80px;
+}
+
+.real_upload {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  display: block;
+  font-size: 0;
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.real_upload:focus {
+  outline-offset: -2px;
 }
